@@ -9,10 +9,12 @@ scalar variables.
 
 =head1 VERSION
 
-This document describes version 1.02 of Readonly::XS, May 13, 2003.
+This document describes version 1.03 of Readonly::XS, April 20, 2004.
 
 Note: Readonly::XS's version number is set to the Readonly.pm version
 number, so this number doesn't mean a whole lot.
+This module is I<unchanged> from version 1.02, except for the version
+number.
 
 =cut
 
@@ -22,7 +24,7 @@ use strict;
 use warnings;
 use vars qw($VERSION $MAGIC_COOKIE);
 
-$VERSION = '1.02';
+$VERSION = '1.03';
 
 require XSLoader;
 XSLoader::load('Readonly::XS', $VERSION);
@@ -109,9 +111,9 @@ Readonly.pm
 
 Eric Roode, roode@cpan.org
 
-Copyright (c) 2003 by Eric J. Roode. All Rights Reserved.  This module
-is free software; you can redistribute it and/or modify it under the
-same terms as Perl itself.
+Copyright (c) 2003-2004 by Eric J. Roode. All Rights Reserved.  This
+module is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
 
 If you have suggestions for improvement, please drop me a line.  If
 you make improvements to this software, I ask that you please send me
@@ -122,11 +124,11 @@ a copy of your changes. Thanks.
 =begin gpg
 
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.2.1 (GNU/Linux)
+Version: GnuPG v1.2.4 (MingW32)
 
-iD8DBQE+wOTJY96i4h5M0egRAtkSAJ41daH+9mHDTvERFwf7w38FVEzIygCgh7jw
-6ZDAxrck1dZYgRnvpOZFBTg=
-=lAYO
+iD8DBQFAhbBGY96i4h5M0egRAsnSAJ91i4FTpfMc6GUHlawjgXb8N8ulTgCgmk0p
+0uEbENoMcY3khOhDtcQ0exk=
+=/1lt
 -----END PGP SIGNATURE-----
 
 =end gpg

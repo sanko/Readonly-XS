@@ -1,5 +1,8 @@
 Revision history for Perl extension Readonly::XS.
 
+1.03  2004 April 20
+	- No changes; version number only changed to match Readonly.pm's.
+
 1.02  2003 May 13
 	- First version.
 

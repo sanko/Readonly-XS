@@ -1,4 +1,4 @@
-Readonly/XS version 1.02
+Readonly/XS version 1.03
 ========================
 
 This is a companion module to Readonly.pm.  You do not use
@@ -24,9 +24,9 @@ COPYRIGHT AND LICENSE
 
 Eric J. Roode, roode@cpan.org
 
-Copyright (c) 2003 by Eric J. Roode. All Rights Reserved.  This module
-is free software; you can redistribute it and/or modify it under the
-same terms as Perl itself.
+Copyright (c) 2003-2004 by Eric J. Roode. All Rights Reserved.  This
+module is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself.
 
 If you have suggestions for improvement, please drop me a line.  If
 you make improvements to this software, I ask that you please send me
