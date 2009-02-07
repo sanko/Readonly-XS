@@ -1,7 +1,3 @@
-=for gpg
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
-
 =head1 NAME
 
 Readonly::XS - Companion module for Readonly.pm, to speed up read-only
@@ -9,7 +5,7 @@ scalar variables.
 
 =head1 VERSION
 
-This document describes version 1.04 of Readonly::XS, December 6, 2005.
+This document describes version 1.05 of Readonly::XS, December 6, 2005.
 
 =cut
 
@@ -19,7 +15,7 @@ use strict;
 use warnings;
 use vars qw($VERSION $MAGIC_COOKIE %PL_COMPAT);
 
-$VERSION = '1.04';
+$VERSION = '1.05';
 
 require XSLoader;
 XSLoader::load('Readonly::XS', $VERSION);
@@ -33,7 +29,7 @@ BEGIN
     if ($MAGIC_COOKIE ne "Do NOT use or require Readonly::XS unless you're me.")
     {
         require Carp;
-        Carp::croak "Readonly::XS is not a standalone module. You should not use it directly.";
+        Carp::croak("Readonly::XS is not a standalone module. You should not use it directly.");
     }
 }
 
@@ -52,6 +48,16 @@ sub import
 
 1;
 __END__
+
+=head1 NOTE
+
+This is an unauthorized release, produced in order to get a version of this
+that will work on perl 5.10 out there since the author seems unwilling to do it
+himself after multiple complaints.
+
+The sole code difference between this and the official 1.04 release is the
+addition of a pair of parentheses around the arguments to an invocation of
+C<Carp::croak()>.
 
 =head1 SYNOPSIS
 
@@ -114,16 +120,8 @@ To avoid my spam filter, please include "Perl", "module", or this
 module's name in the message's subject line, and/or GPG-sign your
 message.
 
+=head1 EVIL DOER
+
+Elliot Shank C<< <perl@galumph.com> >>, 2009
+
 =cut
-
-=begin gpg
-
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.1 (Cygwin)
-
-iD8DBQFDlfagY96i4h5M0egRAmXoAJkBZAkcF+66S6d6Ay0Tnb0DYi1KLwCgkfTP
-5D83z+YoANwU9IcN+zS5OvM=
-=6TLK
------END PGP SIGNATURE-----
-
-=end gpg

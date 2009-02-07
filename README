@@ -1,4 +1,4 @@
-Readonly/XS version 1.04
+Readonly/XS version 1.05
 ========================
 
 This is a companion module to Readonly.pm.  You do not use
@@ -31,3 +31,7 @@ the same terms as Perl itself.
 If you have suggestions for improvement, please drop me a line.  If
 you make improvements to this software, I ask that you please send me
 a copy of your changes. Thanks.
+
+EVIL RELEASE
+
+Elliot Shank <perl@galumph.com>
