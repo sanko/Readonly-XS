@@ -5,7 +5,7 @@ scalar variables.
 
 =head1 VERSION
 
-This document describes version 1.05 of Readonly::XS, December 6, 2005.
+This document describes version 1.05 of Readonly::XS, February 24, 2009.
 
 =cut
 
@@ -13,7 +13,7 @@ package Readonly::XS;
 
 use strict;
 use warnings;
-use vars qw($VERSION $MAGIC_COOKIE %PL_COMPAT);
+use vars qw($VERSION $MAGIC_COOKIE);
 
 $VERSION = '1.05';
 
@@ -48,16 +48,6 @@ sub import
 
 1;
 __END__
-
-=head1 NOTE
-
-This is an unauthorized release, produced in order to get a version of this
-that will work on perl 5.10 out there since the author seems unwilling to do it
-himself after multiple complaints.
-
-The sole code difference between this and the official 1.04 release is the
-addition of a pair of parentheses around the arguments to an invocation of
-C<Carp::croak()>.
 
 =head1 SYNOPSIS
 
@@ -112,16 +102,12 @@ Readonly.pm
 
 Eric Roode, roode@cpan.org
 
-Copyright (c) 2003-2005 by Eric J. Roode. All Rights Reserved.
+Copyright (c) 2003-2009 by Eric J. Roode. All Rights Reserved.
 This module is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
 
 To avoid my spam filter, please include "Perl", "module", or this
 module's name in the message's subject line, and/or GPG-sign your
 message.
-
-=head1 EVIL DOER
-
-Elliot Shank C<< <perl@galumph.com> >>, 2009
 
 =cut

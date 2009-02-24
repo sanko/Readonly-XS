@@ -1,8 +1,8 @@
 Revision history for Perl extension Readonly::XS.
 
-1.05  2009 February 6
-       - Unauthorized release by ELLIOTJS to fix problem on perl 5.10 since
-         the author seems unwilling to release a patched version.
+1.05  2009 February 24
+        - Fix minor syntax error that had been plaguing many people.
+          Thanks to Chris Dolan for shaming me into fixing this.
 
 1.04  2005 December 6
         - No code changes; updated Makefile.PL to require Readonly.

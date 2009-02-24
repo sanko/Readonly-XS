@@ -24,14 +24,10 @@ COPYRIGHT AND LICENSE
 
 Eric J. Roode, roode@cpan.org
 
-Copyright (c) 2003-2004 by Eric J. Roode. All Rights Reserved.  This
+Copyright (c) 2003-2009 by Eric J. Roode. All Rights Reserved.  This
 module is free software; you can redistribute it and/or modify it under
 the same terms as Perl itself.
 
 If you have suggestions for improvement, please drop me a line.  If
 you make improvements to this software, I ask that you please send me
 a copy of your changes. Thanks.
-
-EVIL RELEASE
-
-Elliot Shank <perl@galumph.com>
